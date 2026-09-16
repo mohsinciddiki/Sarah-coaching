@@ -34,10 +34,44 @@ section{padding:88px 0}.center{text-align:center;max-width:760px;margin:0 auto 4
   -webkit-appearance:none;
 }
 </style>
+
+<style>
+.photo{overflow:hidden;padding:0!important;background:transparent!important}
+.photo img,.actualSarahPhoto{
+  display:block;width:100%;height:100%;min-height:430px;
+  object-fit:cover;object-position:center top;border-radius:inherit;
+}
+@media(max-width:900px){.photo img,.actualSarahPhoto{min-height:360px}}
+</style>
+
+<style>
+.testimonials{padding:78px 6%;background:#fff;text-align:center}
+.testimonials .sectionHead{max-width:720px;margin:0 auto 34px}
+.testimonials .sectionHead h2{margin:.35rem 0 .55rem}
+.testimonials .sectionHead p{opacity:.72}
+.testimonialGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:1050px;margin:0 auto}
+.testimonialCard{background:var(--card,#f8f8f5);border:1px solid rgba(0,0,0,.07);border-radius:20px;padding:28px;text-align:left;min-height:190px}
+.quoteMark{font-family:Georgia,serif;font-size:54px;line-height:.7;opacity:.35}
+.testimonialText{font-size:1rem;line-height:1.7}
+.testimonialName{margin-top:20px;font-weight:700;font-size:.92rem}
+.testimonialAction{margin-top:28px}
+.testimonialModal{position:fixed;inset:0;background:rgba(25,30,26,.52);display:none;align-items:center;justify-content:center;padding:20px;z-index:9999}
+.testimonialModal.open{display:flex}
+.testimonialDialog{position:relative;width:min(560px,100%);background:#fff;border-radius:22px;padding:30px;text-align:left;box-shadow:0 25px 70px rgba(0,0,0,.22)}
+.testimonialDialog h3{margin:.35rem 0 .5rem;font-size:1.6rem}
+.testimonialDialog>p{opacity:.72;margin-bottom:20px}
+.modalClose{position:absolute;right:16px;top:12px;border:0;background:transparent;font-size:30px;cursor:pointer}
+.testimonialDialog label{display:block;font-weight:700;margin:14px 0 6px}
+.testimonialDialog label span{font-weight:400;opacity:.6}
+.testimonialDialog input[type=text],.testimonialDialog textarea{width:100%;border:1px solid rgba(0,0,0,.16);border-radius:12px;padding:12px;font:inherit;margin-top:6px;background:#fff}
+.consentRow{display:flex!important;align-items:flex-start;gap:9px;font-weight:400!important;font-size:.9rem}
+.consentRow input{margin-top:5px}
+@media(max-width:850px){.testimonialGrid{grid-template-columns:1fr}.testimonials{padding:60px 5%}}
+</style>
 </head>
 <body>
 <nav class="nav"><div class="wrap navin"><a class="brand" href="#top">Sarah Jawed</a><div class="navlinks"><a href="#about">About</a><a href="#coaching">Coaching</a><a href="#approach">Approach</a><a class="btn" href="#contact">Let's Connect</a></div></div></nav>
-<header class="hero" id="top"><div class="wrap heroGrid"><div><div class="eyebrow">NLP Practitioner • Psychology Background</div><h1>Break patterns.<br>Shift perspectives.<br>Create change.</h1><p class="lead">A supportive coaching space to understand what may be holding you back, negative thoughts and emotions patterns, shift limiting beliefs and move towards what matters to you.</p><div class="actions"><a class="btn" href="#contact">Book a Complimentary Session</a><a class="btn alt" href="#about">Meet Sarah</a></div></div><div class="portrait"><div class="portraitInner"><div class="monogram">SJ</div><h3>Sarah Jawed</h3><p>NLP Practitioner Coach</p><small>Replace this area with Sarah's professional photo when ready.</small></div></div></div></header>
+<header class="hero" id="top"><div class="wrap heroGrid"><div><div class="eyebrow">NLP Practitioner • Psychology Background</div><h1>Break patterns.<br>Shift perspectives.<br>Create change.</h1><p class="lead">A supportive coaching space to understand what may be holding you back, negative thoughts and emotions patterns, shift limiting beliefs and move towards what matters to you.</p><div class="actions"><a class="btn" href="#contact">Book a Complimentary Session</a><a class="btn alt" href="#about">Meet Sarah</a></div></div><div class="portrait"><div class="portraitInner"><h3>Sarah Jawed</h3><p>NLP Practitioner Coach</p><img class="actualSarahPhoto" src="sarah-jawed.jpg" alt="Sarah Jawed, NLP Practitioner Coach"></div></div></div></header>
 <section id="coaching"><div class="wrap"><div class="center"><div class="eyebrow">How coaching can support you</div><h2>Sometimes a different perspective can create a new way forward.</h2><p>Coaching is collaborative and goal-focused. Sessions are tailored to the areas you want to explore and the changes you want to work towards.</p></div><div class="cards"><div class="card"><div class="icon">01</div><h3>Thoughts &amp; emotions</h3><p>Understand negative patterns and create new perspectives.</p></div><div class="card"><div class="icon">02</div><h3>Limiting beliefs</h3><p>Challenge the beliefs holding you back.</p></div><div class="card"><div class="icon">03</div><h3>Confidence</h3><p>Build a stronger relationship with yourself.</p></div><div class="card"><div class="icon">04</div><h3>Goals</h3><p>Turn intentions into meaningful action.</p></div><div class="card"><div class="icon">05</div><h3>Life changes</h3><p>Navigate change with purpose.</p></div></div></div></section>
 <section class="about" id="about"><div class="wrap split"><div class="quoteBox">“My approach is warm, practical and centred around helping you discover the resources and perspectives you already have within you.”</div><div class="copy"><div class="eyebrow">About Sarah</div><h2>Where understanding meets meaningful change.</h2><p>Hi, I’m Sarah.</p><p>I’ve always been fascinated by what makes us think, feel and behave the way we do. My background in psychology sparked that curiosity, which later led me to coaching and NLP.</p><p>For me, coaching is about creating a space where you can pause, feel heard and explore what’s really going on beneath the surface — without judgement or pressure.</p><p>Together, we can explore the thoughts, emotions and belief patterns that may be holding you back, gain a fresh perspective and work towards the changes that matter to you.</p><div class="credentials"><div class="cred">NLP Practitioner Coaching Certification</div><div class="cred">Degree in Psychology</div></div></div></div></section>
 <section id="approach"><div class="wrap"><div class="center"><div class="eyebrow">What to expect</div><h2>A space to pause, reflect and focus on you.</h2></div><div class="cards steps"><div class="card step"><h3>Connect</h3><p>We start with a conversation about what you'd like support with and what you hope to gain from coaching.</p></div><div class="card step"><h3>Explore</h3><p>Together we explore relevant thoughts, beliefs, behaviours and perspectives in a safe, non-judgemental space.</p></div><div class="card step"><h3>Move forward</h3><p>We identify useful insights and practical next steps that you can take beyond the session.</p></div></div></div></section>
@@ -46,8 +80,74 @@ section{padding:88px 0}.center{text-align:center;max-width:760px;margin:0 auto 4
 <a class="btn" href="mailto:jawedsarah9@gmail.com">Email Sarah</a>
 <a class="btn" href="https://linkedin.com/in/sarahjawed" target="_blank" rel="noopener">LinkedIn</a>
 </div></div></div></section>
+
+<section class="testimonials" id="testimonials">
+  <div class="sectionHead">
+    <div class="eyebrow">Client reflections</div>
+    <h2>Kind words from clients</h2>
+    <p>Experiences shared by people Sarah has worked with.</p>
+  </div>
+
+  <div class="testimonialGrid" id="testimonialGrid">
+    <article class="testimonialCard">
+      <div class="quoteMark">“</div>
+      <p class="testimonialText">Testimonials from Sarah’s clients will appear here as they are shared.</p>
+      <div class="testimonialName">Client testimonial</div>
+    </article>
+  </div>
+
+  <div class="testimonialAction">
+    <button class="btn" type="button" onclick="openTestimonialForm()">Share your experience</button>
+  </div>
+
+  <div class="testimonialModal" id="testimonialModal" aria-hidden="true">
+    <div class="testimonialDialog">
+      <button class="modalClose" type="button" aria-label="Close" onclick="closeTestimonialForm()">×</button>
+      <div class="eyebrow">Provide a testimonial</div>
+      <h3>Share your experience with Sarah</h3>
+      <p>Your feedback will be sent to Sarah for review before anything is published.</p>
+      <form id="testimonialForm" onsubmit="sendTestimonial(event)">
+        <label>Your name <span>(optional)</span>
+          <input id="testimonialName" type="text" placeholder="Name or initials">
+        </label>
+        <label>Your testimonial
+          <textarea id="testimonialMessage" required rows="5" placeholder="Share a few words about your coaching experience"></textarea>
+        </label>
+        <label class="consentRow">
+          <input id="testimonialConsent" type="checkbox">
+          <span>I’m happy for Sarah to contact me about publishing this testimonial.</span>
+        </label>
+        <button class="btn" type="submit">Send testimonial</button>
+      </form>
+    </div>
+  </div>
+</section>
 <footer class="footer"><div class="wrap footerGrid"><div class="disclaimer"><strong>Important:</strong> Coaching is intended for personal development and is not a substitute for psychological, psychiatric, medical or other healthcare services. Sarah does not present herself as a registered psychologist.</div><div>© <span id="year"></span> Sarah Jawed</div></div></footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
 
 
+
+<script>
+function openTestimonialForm(){
+  const modal=document.getElementById('testimonialModal');
+  modal.classList.add('open'); modal.setAttribute('aria-hidden','false');
+}
+function closeTestimonialForm(){
+  const modal=document.getElementById('testimonialModal');
+  modal.classList.remove('open'); modal.setAttribute('aria-hidden','true');
+}
+function sendTestimonial(e){
+  e.preventDefault();
+  const name=document.getElementById('testimonialName').value.trim() || 'Anonymous';
+  const message=document.getElementById('testimonialMessage').value.trim();
+  const consent=document.getElementById('testimonialConsent').checked ? 'Yes' : 'No';
+  const subject=encodeURIComponent('New coaching testimonial');
+  const body=encodeURIComponent(
+    'Name: '+name+'\n\nTestimonial:\n'+message+
+    '\n\nPermission to contact about publishing: '+consent
+  );
+  window.location.href='mailto:jawedsarah9@gmail.com?subject='+subject+'&body='+body;
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeTestimonialForm();});
+</script>
 </body></html>
