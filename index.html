@@ -21,8 +21,18 @@ section{padding:88px 0}.center{text-align:center;max-width:760px;margin:0 auto 4
 @media(max-width:900px){.heroPhoto{margin:34px auto 0}.heroPhoto img{width:min(320px,78vw)}}
 </style>
 
+
+
 <style>
-button.btn{font:inherit;cursor:pointer;border:0}
+.contact .btn{
+  font-family:inherit !important;
+  font-size:inherit !important;
+  font-weight:700 !important;
+  line-height:1.2 !important;
+  text-align:center;
+  appearance:none;
+  -webkit-appearance:none;
+}
 </style>
 </head>
 <body>
@@ -33,25 +43,11 @@ button.btn{font:inherit;cursor:pointer;border:0}
 <section id="approach"><div class="wrap"><div class="center"><div class="eyebrow">What to expect</div><h2>A space to pause, reflect and focus on you.</h2></div><div class="cards steps"><div class="card step"><h3>Connect</h3><p>We start with a conversation about what you'd like support with and what you hope to gain from coaching.</p></div><div class="card step"><h3>Explore</h3><p>Together we explore relevant thoughts, beliefs, behaviours and perspectives in a safe, non-judgemental space.</p></div><div class="card step"><h3>Move forward</h3><p>We identify useful insights and practical next steps that you can take beyond the session.</p></div></div></div></section>
 <section class="cta" id="contact"><div class="wrap"><div class="ctaBox"><div class="eyebrow" style="color:#dce9df">Start with a conversation</div><h2>Complimentary introductory coaching session</h2><p>If you're curious about coaching or feel you could benefit from support with confidence, motivation, limiting beliefs, personal goals or simply feeling stuck, you're welcome to get in touch.</p><div class="contact">
 <a class="btn" href="https://wa.me/61433649152?text=Hi%20Sarah%2C%20I%27d%20like%20to%20know%20more%20about%20your%20coaching%20sessions." target="_blank" rel="noopener">WhatsApp</a>
-<button class="btn emailCopy" type="button" onclick="copySarahEmail(this)">Email Sarah</button>
+<a class="btn" href="mailto:jawedsarah9@gmail.com">Email Sarah</a>
 <a class="btn" href="https://linkedin.com/in/sarahjawed" target="_blank" rel="noopener">LinkedIn</a>
 </div></div></div></section>
 <footer class="footer"><div class="wrap footerGrid"><div class="disclaimer"><strong>Important:</strong> Coaching is intended for personal development and is not a substitute for psychological, psychiatric, medical or other healthcare services. Sarah does not present herself as a registered psychologist.</div><div>© <span id="year"></span> Sarah Jawed</div></div></footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
 
-<script>
-async function copySarahEmail(button) {
-  const email = "jawedsarah9@gmail.com";
-  try {
-    await navigator.clipboard.writeText(email);
-  } catch (e) {
-    const t = document.createElement("textarea");
-    t.value = email; document.body.appendChild(t); t.select();
-    document.execCommand("copy"); document.body.removeChild(t);
-  }
-  const old = button.textContent;
-  button.textContent = "Email copied!";
-  setTimeout(() => button.textContent = old, 1800);
-}
-</script>
+
 </body></html>
